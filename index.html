@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>OneLife</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --green: #2f7d4a;
+      --bg: #f7faf7;
+      --card: #ffffff;
+      --text: #182019;
+      --muted: #667069;
+      --border: #e1e7e2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d120f;
+        --card: #151c17;
+        --text: #f1f5f2;
+        --muted: #a9b3ac;
+        --border: #29332c;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 48px auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+      line-height: 1.15;
+    }
+
+    .subtitle { margin: 0 0 28px; color: var(--muted); }
+
+    nav {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+
+    nav a {
+      display: block;
+      padding: 18px 22px;
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a + a { border-top: 1px solid var(--border); }
+
+    nav a:hover, nav a:focus-visible { color: var(--green); }
+
+    footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>OneLife</h1>
+    <p class="subtitle">Her şey önemli. Tek bir yerde.</p>
+
+    <nav aria-label="OneLife">
+      <a href="privacy/">Gizlilik Politikası · Privacy Policy</a>
+      <a href="terms/">Kullanım Koşulları · Terms of Use</a>
+      <a href="support/">Destek · Support</a>
+    </nav>
+
+    <footer>
+      © 2026 OneLife · MetArd Tech
+    </footer>
+  </main>
+</body>
+</html>
